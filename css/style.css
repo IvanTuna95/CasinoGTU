@@ -469,7 +469,23 @@ button {
 
 
 /** end casino section **/
+/* Hacemos que la caja original sea clickeable y tenga transición fluida */
+.casino .game.btn-casino-animado {
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
 
+/* Efecto hover: se hace pastilla, cambia a fondo dorado y borde negro */
+.casino .game.btn-casino-animado:hover {
+    background: linear-gradient(to bottom, #f3e5ab, #d4af37, #aa7700) !important;
+    border-radius: 50px !important;
+    border-color: #000000 !important;
+}
+
+/* Aseguramos que el texto resalte bien al pasar el mouse */
+.casino .game.btn-casino-animado:hover h3 {
+    color: #000000 !important;
+}
 .d_flex {
     display: flex;
     flex-wrap: wrap;
@@ -1032,3 +1048,33 @@ a.article:hover {
     color: #fff !important;
 }
 
+/* Botón principal unificado para los juegos */
+.btn-juego-dorado {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #333333; /* Tono gris oscuro natural de la plantilla */
+    padding: 6px 20px; /* Tamaño de botón sutil e idéntico a los otros */
+    
+    /* Adaptación de Fuente */
+    font-family: 'Poppins', 'sans-serif'; /* Ajustar según la fuente de tu plantilla */
+    font-size: 17px; /* Más pequeño para igualar a Juego 2 */
+    font-weight: 300; /* Más delgado, ya no en negritas rústicas */
+    text-transform: none; /* Quitamos las mayúsculas forzadas */
+    text-decoration: none !important;
+    
+    border-radius: 0px; /* Cuadrado por defecto */
+    border: 2px solid #d4af37; /* Borde dorado delgado y elegante */
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin-top: 15px;
+    
+    /* Centrado */
+    text-align: center;
+}
+
+/* Efecto Hover: pastilla dorada con borde negro */
+.btn-juego-dorado:hover {
+    background: linear-gradient(to bottom, #f3e5ab, #d4af37, #aa7700);
+    border-radius: 50px; /* Se transforma en píldora */
+    border: 2px solid #000000; /* Cambia a borde negro */
+    color: #000000;
+}

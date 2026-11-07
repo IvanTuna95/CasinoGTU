@@ -116,7 +116,7 @@
                </div>
             </section>
          <!-- Categories -->
-         <!-- casino -->
+<!-- casino -->
          <div id="game" class="casino">
             <div class="container">
                <div class="row">
@@ -127,15 +127,17 @@
                      </div>
                   </div>
                </div>
+            
                <div class="row">
-                  <div class="col-md-4 padding_bottom">
-                     <div class="game_box">
-                        <figure><img src="images/game1.jpg" alt="#"/></figure>
-                     </div>
-                     <div class="game">
-                        <h3>Juego 1</h3>
-                     </div>
-                  </div>
+<!-- Juego 1 -->
+<div class="col-md-4 padding_bottom">
+   <div class="game_box">
+      <figure><img src="images/blackjackGTU.jpg" alt="#"/></figure>
+   </div>
+   <div class="game btn-casino-animado" onclick="abrirBlackjack()">
+      <h3>Blackjack</h3>
+   </div>
+</div>
                   <div class="col-md-4 padding_bottom">
                      <div class="game_box">
                         <figure><img src="images/game2.jpg" alt="#"/></figure>
@@ -144,6 +146,7 @@
                         <h3>Juego 2</h3>
                      </div>
                   </div>
+                  
                   <div class="col-md-4 padding_bottom">
                      <div class="game_box">
                         <figure><img src="images/game3.jpg" alt="#"/></figure>
@@ -152,6 +155,7 @@
                         <h3>Juego 3</h3>
                      </div>
                   </div>
+                  
                   <div class="col-md-4 margin_bottom1">
                      <div class="game_box">
                         <figure><img src="images/proximamente_casino.jpg" alt="#"/></figure>
@@ -160,6 +164,7 @@
                         <h3>PROXIMAMENTE</h3>
                      </div>
                   </div>
+
                   <div class="col-md-4 margin_bottom1">
                      <div class="game_box">
                         <figure><img src="images/proximamente_casino.jpg" alt="#"/></figure>
@@ -168,6 +173,7 @@
                         <h3>PROXIMAMENTE </h3>
                      </div>
                   </div>
+
                   <div class="col-md-4">
                      <div class="game_box">
                         <figure><img src="images/proximamente_casino.jpg" alt="#"/></figure>
@@ -176,11 +182,24 @@
                         <h3>PROXIMAMENTE</h3>
                      </div>
                   </div>
+                  
                </div>
             </div>
          </div>
          <!-- end casino -->
+
+         <div id="popup-blackjack" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); z-index: 9999; justify-content: center; align-items: center;">
+             <div style="background-color: white; width: 80%; height: 80%; padding: 20px; border-radius: 10px; text-align: center; position: relative;">
+                 <button onclick="cerrarBlackjack()" style="position: absolute; top: 15px; right: 20px; background: red; color: white; border: none; padding: 10px 15px; font-weight: bold; cursor: pointer; border-radius: 5px;">X Cerrar</button>
+                 <h2 style="color: black; margin-top: 40px;">Mesa de BlackJack</h2>
+                 
+             </div>
+         </div>
          <!-- licens -->
+
+                 
+             </div>
+         </div>
          <div class="licens">
             <div class="container">
                <div class="row">
@@ -475,7 +494,7 @@ Casino GTU es uno de los casinos online con mejor reputación, gracias a que cue
              });
          });
       </script>
-     
+     <script src="js/blackjack.js"></script>
    </body>
 </html>
 
