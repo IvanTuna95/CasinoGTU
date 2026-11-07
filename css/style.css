@@ -1078,3 +1078,8 @@ a.article:hover {
     border: 2px solid #000000; /* Cambia a borde negro */
     color: #000000;
 }
+/* Forzar que el fondo principal del lobby cubra todo el ancho en pantallas grandes */
+.banner_main img {
+    width: 100% !important;
+    object-fit: cover;
+}
