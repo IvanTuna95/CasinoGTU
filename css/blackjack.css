@@ -1,0 +1,221 @@
+/* ========================================= */
+/* ESTILOS DE LA MESA DE BLACKJACK INTERNA   */
+/* ========================================= */
+
+.mesa-verde {
+    background: radial-gradient(circle, #2d8a43 0%, #0a4f1a 100%);
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.area-cartas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 130px;
+    position: relative;
+}
+
+/* Diseño provisional de cartas con HTML/CSS */
+.carta-demo {
+    width: 85px;
+    height: 125px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin: 0 -15px; /* Efecto apilado para que se encimen */
+}
+
+.carta-roja {
+    color: #d32f2f;
+}
+
+.carta-dorso {
+    background: repeating-linear-gradient(45deg, #b31010, #b31010 5px, #fff 5px, #fff 10px);
+    color: transparent;
+}
+
+/* Marcadores de puntuación estilo burbuja */
+.marcador-score {
+    position: absolute;
+    right: 15%;
+    background: rgba(0,0,0,0.3);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.marcador-numero {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.zona-apuesta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Botones de Hit y Stand */
+.btn-accion-bj {
+    background: linear-gradient(to bottom, #5cd65c, #29a329);
+    border: 2px solid #1f7a1f;
+    color: white;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    transition: all 0.2s;
+}
+
+.btn-accion-bj:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.ficha-apuesta {
+    background: #b31010;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px dashed white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+/* Estilo de los botones para apostar tipo ficha de casino */
+.btn-ficha {
+    background: radial-gradient(circle, #1976d2 30%, #0d47a1 100%);
+    border: 3px dashed white;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: transform 0.1s;
+}
+
+.btn-ficha:active {
+    transform: scale(0.9); /* Efecto de hundimiento al picarle */
+}
+/* ========================================= */
+/* ALERTA VIP DE RESULTADOS                  */
+/* ========================================= */
+
+.alerta-vip {
+    background-color: #111111; /* Negro elegante */
+    border: 3px solid #d4af37; /* Borde dorado premium */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4); /* Resplandor dorado */
+    max-width: 450px;
+    width: 90%;
+}
+
+.btn-modal-dorado {
+    background: linear-gradient(to bottom, #f3e5ab, #d4af37, #aa7700);
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-transform: uppercase;
+}
+
+.btn-modal-dorado:hover {
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+}
+/* ========================================= */
+/* ALERTA DE ERRORES Y LÍMITES               */
+/* ========================================= */
+
+.alerta-error {
+    background-color: #000000; /* Fondo completo negro */
+    border: 1px solid #333333; /* Borde oscuro sutil */
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(220, 20, 60, 0.4); /* Resplandor rojo de alerta */
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Clase mágica para pintar solo las exclamaciones */
+.exclamacion-roja {
+    color: #ff3333;
+    font-weight: 900;
+}
+
+.btn-modal-rojo {
+    background: linear-gradient(to bottom, #ff4d4d, #cc0000, #990000);
+    border: 2px solid #000000;
+    color: #ffffff;
+    padding: 10px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-transform: uppercase;
+}
+
+.btn-modal-rojo:hover {
+    transform: scale(1.05);
+}
+/* ========================================= */
+/* BORDE DE LA MESA (EFECTO MADERA)          */
+/* ========================================= */
+
+.borde-mesa-madera {
+    /* Degradado que simula madera oscura barnizada */
+    background: linear-gradient(135deg, #4e342e 0%, #27140f 50%, #170b08 100%);
+    
+    /* Filo dorado exterior para combinar con los modales */
+    border: 3px solid #d4af37;
+    
+    /* Dimensiones que ya tenías */
+    width: 90%;
+    max-width: 900px;
+    height: 85%;
+    
+    /* El grosor del borde de madera */
+    padding: 20px; 
+    
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    /* Sombra gigante hacia afuera y sombra hacia adentro para hundir el tapete */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.8), inset 0 0 25px rgba(0,0,0,1);
+}
