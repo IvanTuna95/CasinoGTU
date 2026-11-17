@@ -165,8 +165,14 @@ a,
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    display: block; 
+    transition: transform 0.3s ease; 
 }
-
+img:hover {
+    transform: scale(1.02);
+}
 :focus {
     outline: 0;
 }
@@ -433,8 +439,11 @@ button {
 }
 
 .casino .game_box {
-    background-image: linear-gradient(to right, #bc883d, #f5e47b, #bc883d);
-    padding: 20px;
+    background-color: #260e08; 
+    border: 1px solid rgba(245, 228, 123, 0.35); 
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
 .casino .game_box figure {
@@ -443,6 +452,9 @@ button {
 
 .casino .game_box figure img {
     width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 .padding_bottom {
