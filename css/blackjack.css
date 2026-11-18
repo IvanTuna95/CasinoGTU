@@ -1,6 +1,6 @@
 
 .mesa-verde {
-    background: radial-gradient(circle, #2d8a43 0%, #0a4f1a 100%);
+    background: radial-gradient(circle, #081061 0%, #050a4b 100%);
     border-radius: 8px;
     height: 100%;
     display: flex;
@@ -36,11 +36,11 @@
 }
 
 .carta-roja {
-    color: #d32f2f;
+    color: #081061;
 }
 
 .carta-dorso {
-    background: repeating-linear-gradient(45deg, #b31010, #b31010 5px, #fff 5px, #fff 10px);
+    background: repeating-linear-gradient(45deg, #081061, #081061 5px, #000000 5px, #000000 10px);
     color: transparent;
 }
 
