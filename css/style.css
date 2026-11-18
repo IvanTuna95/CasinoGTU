@@ -48,12 +48,9 @@ html {
 }
 
 body {
-    color: #666666;
-    font-size: 14px;
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.80857;
-    font-weight: normal;
-    overflow-x: hidden;
+    background: #080d24;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -356,19 +353,27 @@ button {
 }
 
 .header {
-    background: transparent;
-    padding: 35px 0px;
-    position: absolute;
-    z-index: 99;
+    position: relative;
     width: 100%;
+    background: #080d24;
+    padding: 18px 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(212,175,55,0.4);
+}
+/* Alinear logo y menu */
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+
+
 .logo a {
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    line-height: 40px;
+    color: #f5d76e;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .banner_main {
@@ -385,65 +390,83 @@ button {
 }
 
 .banner_main .text-bg a {
-    width: 191px;
-    background: #fcfcfc;
-    padding: 9px 0px;
-    color: #000;
-    font-size: 17px;
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    transition: all .4s ease-in;
+    background: linear-gradient(
+        135deg,
+        #f5d76e,
+        #c99a24
+    );
+    color: #10172f;
+    border: 1px solid #fff0a8;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .banner_main .text-bg a:hover {
-    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
-    color: #000;
-    transition: all .4s ease-in;
-    border-radius: 20px;
+    background: #fff0a8;
+    color: #080d24;
+    border-radius: 25px;
+    transform: translateY(-3px);
 }
 
 .titlepage {
-    padding-bottom: 60px;
+    padding-bottom: 55px;
 }
 
 .titlepage h2 {
-    font-weight: bold;
-    color: #f8eca6;
-    line-height: 66px;
-    font-size: 60px;
     text-align: center;
-    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
+   font-family: 'Rajdhani', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    background: linear-gradient(
+        90deg,
+        #d4af37,
+        #fff1ad,
+        #d4af37
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 20px;
+    line-height: 1.2;
 }
 
 .titlepage span {
-    border: #f0e7b5 solid 1px;
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+   border: none;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #d4af37,
+        transparent
+    );
+    max-width: 500px;
 }
 
 
 /** casino section **/
 
 .casino {
-    background-color: #081061;
-    padding-top: 90px;
+     background: linear-gradient(
+        135deg,
+        #080d24,
+        #101c42,
+        #080d24
+        );
+    padding: 85px 0;
 }
 
 .casino .game_box {
-    background-color: #060c4e; 
-    border: 2.5px solid rgba(245, 228, 123, 0.35); 
-    padding: 12px;
+   background: linear-gradient(
+        145deg,
+        #17254c,
+        #0a112c
+    );
+    border: 1px solid rgba(212, 175, 55, 0.45);
     border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    padding: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: all 0.35s ease;
+    overflow: hidden;
 }
 
 .casino .game_box figure {
@@ -462,21 +485,29 @@ button {
 }
 
 .casino .game { 
-   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
-    margin: -28px auto 0 auto !important;
-    background: #fff;
-    max-width: 200px;
-    width: 100%;
-    border: 3px solid #cca24f;
-    border-radius: 12px;
-    padding: 8px;
-    z-index: 999;
+   background: linear-gradient(
+        145deg,
+        #17254c,
+        #0a112c
+    );
+    border: 1px solid #d4af37;
+    border-radius: 10px;
+    max-width: 210px;
+    padding: 10px;
+    margin: -20px auto 0 auto !important;
     position: relative;
+    z-index: 2;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
 }
 
 .casino .game h3 {
-    font-size: 20px;
+     color: #f5d76e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     text-align: center;
+    transition: all 0.3s ease;
 }
 
 
