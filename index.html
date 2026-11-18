@@ -125,7 +125,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="titlepage">
-                        <h2>Nuestros Juegos de Casino</h2>
+                        <h2>Juegos disponibles</h2>
                         <span></span>
                      </div>
                   </div>
@@ -193,13 +193,13 @@
 <!-- POP-UP DE BLACKJACK -->
 <div id="popup-blackjack" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center;">
     
-    <!-- NUEVO CUADRO BASE: Textura de mesa de madera -->
+    
     <div class="borde-mesa-madera">
         
-        <!-- Botón rojo superior derecho para salir de la mesa -->
+      
         <button onclick="cerrarBlackjack()" style="position: absolute; top: -15px; right: -15px; background: red; color: white; border: 2px solid white; padding: 10px 15px; font-weight: bold; cursor: pointer; border-radius: 50px; z-index: 10; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">X Cerrar</button>
         
-        <!-- AQUÍ ADENTRO DEBE SEGUIR TU modal-resultado, modal-advertencia y tu mesa-verde -->
+        
         <!-- MODAL DE RESULTADOS VIP (Oculto por defecto) -->
         <div id="modal-resultado" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1000; justify-content: center; align-items: center; border-radius: 10px;">
             <div class="alerta-vip">
@@ -210,17 +210,13 @@
         <!-- MODAL DE ADVERTENCIAS (Límites y fondos) -->
         <div id="modal-advertencia" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 1001; justify-content: center; align-items: center; border-radius: 10px;">
             <div class="alerta-error">
-                <!-- Usamos un div en vez de h2 para poder inyectar HTML (el color rojo) -->
-             
+               
 <div id="mensaje-advertencia" style="color: #ffffff; margin-bottom: 25px; font-size: 22px; font-family: 'Georgia', 'Times New Roman', serif; font-weight: normal; line-height: 1.4;">Mensaje</div>
                 <button class="btn-modal-rojo" onclick="cerrarAdvertencia()">Entendido</button>
             </div>
         </div>
-        <!-- CONTENEDOR MESA VERDE INTERNA (Este era el que faltaba) -->
+    
         <div class="mesa-verde">
-            
-         
-            <!-- Zona del Dealer (Crupier) -->
             <div class="area-cartas">
                 <div id="dealer-cartas" style="display: flex; gap: 10px; min-height: 125px;"></div>
                 
@@ -266,188 +262,21 @@
             </div>
 
             <!-- Bottom Info (Banco) -->
-            <div style="background: rgba(0,0,50,0.5); padding: 8px 15px; border-radius: 5px; width: fit-content; font-size: 16px;">
+            <div style="background: #081061; padding: 8px 15px; border-radius: 5px; width: fit-content; font-size: 16px;">
                 Banco: <strong id="banco-jugador">$100</strong>
             </div>
 
-        </div> <!-- Cierre de la mesa verde -->
-    </div> <!-- Cierre del cuadro blanco -->
-</div> <!-- Cierre del pop-up -->
-         <!-- licens -->
-
-                 
-             </div>
-         </div>
-         <div class="licens">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="titlepage">
-                        <h2>Licencias & regulaciones </h2>
-                        <span></span>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-12">
-                     <div id="licens" class="carousel slide licens_Carousel " data-ride="carousel">
-                        <ol class="carousel-indicators">
-                           <li data-target="#licens" data-slide-to="0" class="active"></li>
-                           <li data-target="#licens" data-slide-to="1"></li>
-                           <li data-target="#licens" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                           <div class="carousel-item active">
-                              <div class="container">
-                                 <div class="carousel-caption ">
-                                    <div class="row d_flex">
-                                       <div  class="col-md-6">
-                                          <div class="test_box">
-                                             <div class="jons">
-                                                <h4>Promociones</h4>
-                                             </div>
-                                             <p>Realizamos numerosas promociones de manera regular para asegurar que siempre haya algo para que nuestros miembros disfruten.
-
-Las promociones vienen en todo tipo de formas y tamaños y pueden ofrecerte cualquier cosa desde bono por depósito a tiradas gratis a reembolsos a puntos de lealtad extras. Asegúrate de revisar regularmente y asegurarte de no perderte de nada.</p>
-                                             <a class="read_more" href="Javascript:void(0)">Mirá las promociones</a>
-                                          </div>
-                                       </div>
-                                       <div  class="col-md-6">
-                                          <div class="test_box">
-                                             <div class="jons">
-                                                <figure><img src="images/jons_img1.png" alt="#"/></figure>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="carousel-item">
-                              <div class="container">
-                                 <div class="carousel-caption">
-                                    <div class="row d_flex">
-                                       <div  class="col-md-6">
-                                          <div class="test_box">
-                                             <div class="jons">
-                                                <h4>Clientes VIP</h4>
-                                             </div>
-                                             <p>Queremos recompensar a nuestros jugadores más leales y es por esto que hemos establecido un Club VIP.
-
-Los miembros del club obtendrán puntos de lealtad siempre que jueguen en el casino y subirán niveles en el club calificando para recompensas mejores y más grandes a lo largo del camino.</p>
-                                             <a class="read_more" href="Javascript:void(0)">Hazte miembro</a>
-                                          </div>
-                                       </div>
-                                       <div  class="col-md-6">
-                                          <div class="test_box">
-                                             <div class="jons">
-                                                <figure><img src="images/jons_img1.png" alt="#"/></figure>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="carousel-item">
-                              <div class="container">
-                                 <div class="carousel-caption">
-                                    <div class="row d_flex">
-                                       <div  class="col-md-6">
-                                          <div class="test_box">
-                                             <div class="jons">
-                                                <h4>Slots de la semana</h4>
-                                             </div>
-                                             <p>Cada semana destacaremos un juego tragamonedas nuevo para que lo disfrutes y te recompensaremos por jugarlo.
-
-De esta manera podrás descubrir más de los cientos de títulos principales que tenemos para ofrecer y asegurar que no te pierdas de ningún juego emocionante. Mantente atento cada semana por la última selección.</p>
-                                             <a class="read_more" href="Javascript:void(0)">Juega ahora</a>
-                                          </div>
-                                       </div>
-                                       <div  class="col-md-6">
-                                          <div class="test_box">
-                                             <div class="jons">
-                                                <figure><img src="images/jons_img1.png" alt="#"/></figure>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#licens" role="button" data-slide="prev">
-                        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-                        </a>
-                        <a class="carousel-control-next" href="#licens" role="button" data-slide="next">
-                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                        </a>
-                     </div>
-                     <p class="lorem">Las licencias de Casino GTU: Licencia Secretaría de Gobernación: Dirección de Juegos y Sorteos- República Mexicana. (SEGOBDGG/SP/404/97).
-
-Casino GTU es uno de los casinos online con mejor reputación, gracias a que cuenta con la licencia de juego y apuestas deportivas otorgada por la Dirección General de Juegos y Sorteos, un órgano que pertenece a la Secretaría de Gobernación de México. Es un casino legal y seguro.</p>
-                  </div>
-                  <div id="about" class="col-md-12">
-                     <ul class="spinit">
-                        <li><a href="Javascript:void(0)">About spinit</a></li>
-                        <li><a href="Javascript:void(0)">our promotions</a></li>
-                        <li><a href="Javascript:void(0)">over 1000games</a></li>
-                        <li><a href="Javascript:void(0)">our mobile app</a></li>
-                     </ul>
-                     <div class="two_box">
-                        <div class="row d_flex">
-                           <div class="col-md-4">
-                              <div class="many_box_img">
-                                 <figure><img src="images/imag.jpg" alt="#"/></figure>
-                              </div>
-                           </div>
-                           <div class="col-md-8">
-                              <div class="many_box">
-                                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variati<br>
-                                    ons of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                                 </p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- end lLicens -->
-         <!-- customer -->
-         <div id="customer"  class="customer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="titlepage">
-                        <h2>What Says Our customer</h2>
-                        <span></span>
-                     </div>
-                  </div>
-               </div>
-               <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                     <div class="customer_text">
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                        <div class="customer_box">
-                           <i><img src="images/customer.png" alt="#"/></i>
-                           <h4>Mark jo</h4>
-                           <span>jected humour</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- end customer -->
-         <!-- reqeste -->
+        </div> 
+    </div> 
+</div> 
+<!--Se elimina seccion de licencias y customer-->
+         <!-- requeste -->
          <div id="contact" class="reqeste">
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
                      <div class="titlepage">
-                        <h2>Reqeste A call back</h2>
+                        <h2>Atencion a Clientes</h2>
                         <span></span>
                      </div>
                   </div>
