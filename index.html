@@ -69,56 +69,70 @@
          </div>
          <div id="content">
             <!-- header -->
-            <header>
-               <!-- header inner -->
-               <div class="head_top">
-                  <div class="header">
-                     <div class="container-fluid">
-                        <div class="row">
-                           <div class="col-md-3 logo_section">
-                              <div class="full">
-                                 <div class="center-desk">
-                                    <li>
-                                       <button type="button" id="sidebarCollapse">
-                                       <img src="images/menu_icon.png" alt="#" />
-                                       </button>
-                                    
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-md-9">
-                              <div class="right_header_info">
-                                 <ul>
-                                    <li class="menu_iconb">
-                                       <a href="Javascript:void(0)">Login</a>
-                                    </li>
-                                    
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </div>
+ <header>
+   <div class="head_top">
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+               
+               <!-- Columna Izquierda: Menú (2 columnas) -->
+               <div class="col-md-2 col-3 logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <button type="button" id="sidebarCollapse">
+                           <img src="images/menu_icon.png" alt="Menú" />
+                        </button>
                      </div>
                   </div>
                </div>
-            </header>
-            <!-- end header inner -->
-            <!-- end header -->
-            <section class="slider_section">
-               <div class="banner_main">
-                  <img src="images/bg_main.jpg" alt="#"/>
-                  <div class="container-fluid padding3">
-                     <div class="row">
-                        <div class="col-md-12">
-                           <div class="text-bg">
-                              <a href="Javascript:void(0)">Juega ahora</a>
-                           </div>
-                        </div>
+
+               <!-- Columna Central: Redes Sociales (8 columnas) -->
+               <div class="col-md-8 col-6">
+                  <div class="redes-navbar">
+                     <div class="dev-social">
+                        <span>Jocelyn Tornez -</span>
+                        <a href="https://github.com/Jossx1006-py" target="_blank" aria-label="GitHub Jocelyn"><i class="fa fa-github"></i></a>
+                        <a href="https://instagram.com/" target="_blank" aria-label="Instagram Jocelyn"><i class="fa fa-instagram"></i></a>
+                     </div>
+
+                     <span class="separador-redes">|</span>
+
+                     <div class="dev-social">
+                        <span>Ivan Ibarra -</span>
+                        <a href="https://github.com/IvanTuna95" target="_blank" aria-label="GitHub Ivan"><i class="fa fa-github"></i></a>
+                        <a href="https://instagram.com/" target="_blank" aria-label="Instagram Ivan"><i class="fa fa-instagram"></i></a>
                      </div>
                   </div>
                </div>
-            </section>
-         <!-- Categories -->
+
+               <!-- Columna Derecha: Login (2 columnas) -->
+               <div class="col-md-2 col-3">
+                  <div class="right_header_info">
+                     <ul>
+                        <li class="menu_iconb">
+                           <a href="Javascript:void(0)">Login</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</header>           <!-- end header -->
+<!-- apuestas deportivas -->
+
+<div class="seccion-deportes">
+   <div class="caja-deportes">
+      <figure>
+         <img src="images/banner-deportes.jpg" alt="Apuestas Deportivas" />
+      </figure>
+      <div class="texto-deportes">
+         ¡Prueba la nueva sección de apuestas deportivas!
+      </div>
+   </div>
+</div>
 <!-- casino -->
          <div id="game" class="casino">
             <div class="container">
@@ -277,19 +291,19 @@
                      <form id="cochang" class="form_main">
                         <div class="row">
                            <div class="col-md-12">
-                              <input class="form_control" placeholder="Name" type="text" name="Name">
+                              <input class="form_control" placeholder="Nombre" type="text" name="Name">
                            </div>
                            <div class="col-md-12">
-                              <input class="form_control" placeholder="Phone number" type="text" name="Phone number">
+                              <input class="form_control" placeholder="Número de teléfono" type="text" name="Phone number">
                            </div>
                            <div class="col-md-12">
-                              <input class="form_control" placeholder="Email" type="text" name="Email">
+                              <input class="form_control" placeholder="Mail" type="text" name="Email">
                            </div>
                            <div class="col-md-12">
-                              <input class="form_control" placeholder="Message" type="text" name="Message">
+                              <input class="form_control" placeholder="Mensaje" type="text" name="Message">
                            </div>
                            <div class="col-md-12">
-                              <button class="send_btn">Send</button>
+                              <button class="send_btn">Enviar</button>
                            </div>
                         </div>
                      </form>
@@ -305,10 +319,10 @@
                   <div class="row">
                      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
                         <div class="address">
-                           <h3>Subscribe Now</h3>
+                           <h3>Suscribete</h3>
                            <form class="newtetter">
-                              <button class="submit">submit</button>
-                              <input class="tetter" placeholder="Enter your email" type="text" name="Enter your email">
+                              <button class="submit">Enviar</button>
+                              <input class="tetter" placeholder="Ingresa tu correo electrónico" type="text" name="Enter your email">
                            </form>
                         </div>
                      </div>
